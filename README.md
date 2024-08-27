@@ -1,30 +1,25 @@
-# Mintlify Starter Kit
+# Codeium Docs
 
-Click on `Use this template` to copy the Mintlify starter kit. The starter kit contains examples including
-
-- Guide pages
-- Navigation
-- Customizations
-- API Reference pages
-- Use of popular components
+Welcome to the Codeium docs page source code.
+The docs serve as a reference point for Codeium usage, across all surfaces of the product:
+our VS Code extension, our JetBrains plugin, our PR review system Forge, our Chrome extension, our Enterprise deployment guides, and more.
+It is currently under construction!
 
 ### Development
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the documentation changes locally. To install, use the following command
+We use [Mintlify](https://mintlify.com/) as our docs provider.
+To develop locally and preview the changes, install the [Mintlify CLI](https://www.npmjs.com/package/mintlify).
 
-```
-npm i -g mintlify
-```
-
-Run the following command at the root of your documentation (where mint.json is)
-
-```
-mintlify dev
+```bash
+npm i mintlify
 ```
 
-### Publishing Changes
+Run the following command at the root of this repo (where `mint.json` is)
 
-Install our Github App to auto propagate changes from your repo to your deployment. Changes will be deployed to production automatically after pushing to the default branch. Find the link to install on your dashboard. 
+```bash
+npx mintlify dev
+```
+
 
 #### Troubleshooting
 
