@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Codeium Docs",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "/assets/logo.svg",
+    "light": "/assets/logo.svg"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/assets/favicon.svg",
   "colors": {
     "primary": "#0D9373",
     "light": "#07C983",
@@ -18,74 +18,76 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "mailto:hello@codeium.com"
     }
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "url": "https://codeium.com/profile"
+  },
+  "primaryTab": {
+    "name": "Overview"
   },
   "tabs": [
     {
-      "name": "API Reference",
-      "url": "api-reference"
+      "name": "VS Code",
+      "url": "vscode"
+    },
+    {
+      "name": "JetBrains",
+      "url": "jetbrains"
     }
   ],
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "name": "Discord Community",
+      "icon": "discord",
+      "url": "https://discord.com/invite/3XFf78nAx5"
     },
     {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
+      "name": "Codeium Blog",
       "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "url": "https://codeium.com/blog"
     }
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Overview",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        "introduction"
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Getting Started",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "vscode/installation",
+        "jetbrains/installation"
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "Autocomplete",
       "pages": [
-        "api-reference/introduction"
+        "vscode/autocomplete/overview",
+        "jetbrains/autocomplete/overview"
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Chat",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "vscode/chat/overview",
+        "jetbrains/chat/overview"
+      ]
+    },
+    {
+      "group": "Command",
+      "pages": [
+        "vscode/command/overview",
+        "jetbrains/command/overview"
       ]
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "twitter": "https://x.com/codeiumdev",
+    "discord": "https://discord.com/invite/3XFf78nAx5"
   }
 }
