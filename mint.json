@@ -17,8 +17,8 @@
   },
   "topbarLinks": [
     {
-      "name": "Support",
-      "url": "mailto:hello@codeium.com"
+      "name": "Feature Request",
+      "url": "https://codeium.canny.io/feature-requests/"
     }
   ],
   "topbarCtaButton": {
@@ -33,11 +33,6 @@
       "name": "Discord Community",
       "icon": "discord",
       "url": "https://discord.com/invite/3XFf78nAx5"
-    },
-    {
-      "name": "Reddit",
-      "icon": "reddit",
-      "url": "https://reddit.com/r/codeium"
     },
     {
       "name": "Codeium Blog",
@@ -72,7 +67,6 @@
           "group": "Autocomplete",
           "pages": [
             "vscode/autocomplete/overview",
-            "vscode/autocomplete/acceleration",
             "vscode/autocomplete/exploration",
             "vscode/autocomplete/tipsmyths"
           ]
@@ -98,7 +92,9 @@
     {
       "group": "Context Awareness",
       "pages": [
-        "overview"
+        "vscode/contextawareness/overview",
+        "vscode/contextawareness/contextpinning",
+        "vscode/contextawareness/customcontext"
       ]
     },
     {

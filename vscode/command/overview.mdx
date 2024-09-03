@@ -1,18 +1,23 @@
 ---
 title: 'Overview'
-description: 'In-line code generation and editing'
+description: ''
 ---
-Working through a finnicky section of state-management code?
-Need a hand writing a few tricky utility functions?
-Can't quite remember the right sequence of API calls?
+Oftentimes when we’re writing a simple code block, it’s much easier and faster to describe what we want through natural language. For all the cases where you want to instruct the model to write some code in a file, use Codeium Command. Writing a new component where one button is double the width of the other or creating an entire function from scratch–Codeium Command can be your go-to tool.
 
-**Codeium Command** might the tool for the job.
-Command lets you generate and edit code directly in the editor
-following explicit natural-language instructions,
-at a greater scope than autocomplete.
+To invoke Command, hit Ctrl (or Cmd on Mac) + I. From there, you can enter a prompt in natural language and Codeium will provide a multiline suggestion that you can accept or reject. 
 
-Press `Ctrl+I` or `⌘+I` to open the Command interface.
-This will position Command to generate code at your current cursor position.
-You can also trigger Command on a selection of highlighted code,
-in which case Command will be positioned to edit the lines spanning the selection.
-Type an instruction, and hit `Ctrl+⏎` or `⌘+⏎` to submit it.
+<img src="https://help.codeium.com/hc/article_attachments/27432035017627"/>
+
+You can also use Command to edit existing functions as shown below. Simply highlight the code you wish to edit and press Ctrl (or Cmd on Mac) + I: 
+
+<img src="https://help.codeium.com/hc/article_attachments/27450360647835"/>
+
+# Best Practices
+
+- Command is great for command based, in-line changes
+
+    - This model is training to be especially good at instruction following
+
+    - This model runs on a larger model than autocomplete
+
+    - Make sure to highlight the entire block of code you want Command to apply the diff on
