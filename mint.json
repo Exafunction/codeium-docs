@@ -17,8 +17,8 @@
   },
   "topbarLinks": [
     {
-      "name": "Support",
-      "url": "mailto:hello@codeium.com"
+      "name": "Feature Request",
+      "url": "https://codeium.canny.io/feature-requests/"
     }
   ],
   "topbarCtaButton": {
@@ -28,16 +28,6 @@
   "primaryTab": {
     "name": "Overview"
   },
-  "tabs": [
-    {
-      "name": "VS Code",
-      "url": "vscode"
-    },
-    {
-      "name": "JetBrains",
-      "url": "jetbrains"
-    }
-  ],
   "anchors": [
     {
       "name": "Discord Community",
@@ -48,41 +38,105 @@
       "name": "Codeium Blog",
       "icon": "newspaper",
       "url": "https://codeium.com/blog"
+    },
+    {
+      "name": "Support",
+      "icon": "bug",
+      "url": "mailto:hello@codeium.com"
     }
   ],
   "navigation": [
     {
       "group": "Overview",
       "pages": [
-        "introduction"
+        "introduction",
+        "compatibleIDEs",
+        {
+          "group": "Getting Started",
+          "pages": [
+            "vscode/gettingstarted/installation",
+            "vscode/gettingstarted/quickstart"
+          ]
+        }
       ]
     },
     {
-      "group": "Getting Started",
+      "group": "Features",
       "pages": [
-        "vscode/installation",
-        "jetbrains/installation"
+        {
+          "group": "Autocomplete",
+          "pages": [
+            "vscode/autocomplete/overview",
+            "vscode/autocomplete/exploration",
+            "vscode/autocomplete/tipsmyths"
+          ]
+        },
+        {
+          "group": "Chat",
+          "pages": [
+            "vscode/chat/overview",
+            "vscode/chat/codelenses",
+            "vscode/chat/atmentions"
+          ]
+        },
+        {
+          "group": "Command",
+          "pages": [
+            "vscode/command/overview",
+            "vscode/command/generation",
+            "vscode/command/edits"
+          ]
+        }
       ]
     },
     {
-      "group": "Autocomplete",
+      "group": "Context Awareness",
       "pages": [
-        "vscode/autocomplete/overview",
-        "jetbrains/autocomplete/overview"
+        "vscode/contextawareness/overview",
+        "vscode/contextawareness/contextpinning",
+        "vscode/contextawareness/customcontext"
       ]
     },
     {
-      "group": "Chat",
+      "group": "JetBrains",
       "pages": [
-        "vscode/chat/overview",
-        "jetbrains/chat/overview"
-      ]
-    },
-    {
-      "group": "Command",
-      "pages": [
-        "vscode/command/overview",
-        "jetbrains/command/overview"
+        {
+          "group": "Docs",
+          "pages": [
+            {
+              "group": "Getting Started",
+              "pages": [
+                "jetbrains/gettingstarted/installation",
+                "jetbrains/gettingstarted/quickstart"
+              ]
+            },
+            {
+              "group": "Autocomplete",
+              "pages": [
+                "jetbrains/autocomplete/overview",
+                "jetbrains/autocomplete/acceleration",
+                "jetbrains/autocomplete/exploration",
+                "jetbrains/autocomplete/tipsmyths"
+              ]
+            },
+            {
+              "group": "Chat",
+              "pages": [
+                "jetbrains/chat/overview",
+                "jetbrains/chat/codelenses",
+                "jetbrains/chat/atmentions"
+              ]
+            },
+            {
+              "group": "Command",
+              "pages": [
+                "jetbrains/command/overview",
+                "jetbrains/command/generation",
+                "jetbrains/command/edits"
+              ]
+            }
+          ]
+        }
       ]
     }
   ],

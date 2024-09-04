@@ -1,0 +1,23 @@
+---
+title: Overview
+description: 'What is Context?'
+---
+# Background: the value of Context
+
+Say you wanted to ask a question about a specialized set of documents (eg. a private codebase) that the AI was never trained on. One option is to "fine tune" the AI model on that set of documents. With the latest AI models, though, this is no longer strictly necessary. Instead, you can just include the documents as "context" to the original in the model input, and the model will use that information and respond as if it has known about that document all along.
+
+In a nutshell, that is what the Context Module does: find the right pieces of content and feeds it to the model to help it generate a better response.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yy2umoeitGo?si=e16vsJqYTPn_g55R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Note: Codeium does offer full fine tuning for enterprise, and the best solution combines the two features together, but the Context Module is highly effective at personalization.
+
+# Codeium Context Awareness
+
+Codeium is able to provide highly personalized suggestions because it looks at multiple relevant sources of context. 
+
+- Your IDE and open files. Codeium looks at the current file and other open files in the IDE since these are often highly relevant to the code you are currently writing. 
+
+- Your local repository. Codeium also indexes your entire local codebase (even the files that are not open). Codeium's retrieval engine will automatically pull in code snippets that are relevant to the query you are making or the code you are writing. 
+
+- Your remote repositories (Teams & Enterprise only). For Teams and Enterprise users, Codeium can also index remote repositories. This is useful for companies where the development organization works across multiple repositories.

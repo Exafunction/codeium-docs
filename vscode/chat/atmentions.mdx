@@ -1,0 +1,39 @@
+---
+title: '@ Mentions'
+description: 'In-line AI suggestions faster than thought'
+---
+NOTE: This feature is only supported in: VS Code, JetBrains, Eclipse, Visual Studio.
+
+NOTE: This feature may not be supported in Self-Hosted Enterprise Plan.
+
+When talking about code, it’s common to want to refer to various snippets and outputs. That’s why Codeium Chat integrates with various parts of your code and IDE to provide you the easiest way to refer to whatever you are working on: @ mentions
+
+There are currently three kinds of @ mentions:
+
+1. **Chat with Code**: Directly mention functions and classes in your code to understand the runtime of functions, check for styling issues, and much much more.
+
+2. **Chat with Libraries**: Refer to a set of popular repositories and libraries to get more accurate and up-to-date answers by telling Codeium Chat to auto-grab relevant context directly from the library’s code.
+
+3. **Chat with Terminal**: Explore your in-IDE terminal output to parse through large logs, understand complex results, and debug failed tests.
+
+Let’s try each of them out:
+
+<Steps>
+      <Step title = "Chat With Code">
+        The PetHotel class may take a while for us to read through so let’s ask a question about it and have Codeium Chat parse through it instead. Here is the one that we used:
+
+        NOTE: You must type out @ and select from the options, copy pasting it entirely will not work.        
+        
+        <img src = "https://exafunction.github.io/public/university_videos/chat_content/atmentions1.gif"/>
+      </Step>
+      <Step title = "Chat With Libraries">
+        There are a variety of libraries we support, but for now let’s try using material-ui to write a button component. Use @mui/material-ui and prompt Codeium Chat with"Write me a copy button with an icon" and let it generate it for you!
+
+        <img src = "https://exafunction.github.io/public/university_videos/chat_content/atmentions2.gif"/>
+      </Step>
+      <Step title = "Chat With Terminal">
+        Finally, let’s try using Codeium Chat with our terminal. Open up the in-IDE terminal and run any command, then use @terminal:all to ask a question about it.
+
+        <img src = "https://exafunction.github.io/public/demos/at-terminal-sift.gif"/>
+      </Step>
+</Steps>
