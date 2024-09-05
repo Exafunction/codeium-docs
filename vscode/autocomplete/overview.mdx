@@ -2,66 +2,38 @@
 title: 'Overview'
 description: ''
 ---
-<Tip>
-Accept Completion: `Tab`
 
-Accept Word: `⌘` + `►`
+
+Codeium's Autocomplete model automatically suggests edits, with exceptional speed, context awareness, and memory. Just press `tab` to accept a suggestion! Or press `esc` to reject.
+
+<video
+  autoPlay
+  muted
+  loop
+  playsInline
+  className="w-full aspect-video"
+  src="https://exafunction.github.io/public/demos/codeium_ai_flow.mp4">
+</video>
+
+Codeium Autocomplete is:
+- the only autocomplete tool that can Fill-In-the_Middle (FIM). It takes in context from before and after the cursor in order to make suggestions.
+
+- able to make inline and multi-line suggestions and edits.
+
+- able to remember your previous suggestions and changes to your code. 
+
+All users receive unlimited autocomplete suggestions!
+
+## Keyboard Shortcuts
+
+To accept an autocompletion suggestion: `tab`
+
+To accept an autocompletion suggestion one word at a time: `⌘` + `→`
+
+Next Completion: `⌥` + `]` Previous Completion: `⌥` + `[` 
 
 Trigger Completion: `⌥` + `\`
 
-Next Completion: `⌥` + `]`
+## Toggle
 
-Previous Completion: `⌥` + `[`
-</Tip>
-
-One of the core functionalities of Codeium is autocomplete: on every keystroke you make, Codeium tries to complete what you’re typing. Through looking at the current file, past edits, and context from relevant snippets within your codebase, it generates various plausible suggestions as “ghost text.”
-
-One of the most immediate use cases of this is accelerating your development. Even when you know exactly what you want to write, Codeium can save you a lot of keystrokes and time especially when writing easy, repetitive, or boilerplate code.
-
-To get the best autocomplete results, make sure to decorate your code with declarative, quality comments like in the examples shown below: 
-
-<img src="https://exafunction.github.io/public/university_videos/autocomplete_content/acceleration1.gif"/>
-
-<img src="https://exafunction.github.io/public/university_videos/autocomplete_content/acceleration2.gif"/>
-
-# Fill-in-the-middle (FIM)
-
-Codeium's Autcomplete model also has FIM capabilities. This is important because often times you are not adding new lines of code to the end of a file, but inserting code in the middle of a file or a line. Autocomplete looks at code above and below the current line to make accurate suggestions. See the example of FIM vs non-FIM model below: 
-
-<Frame caption = "Codeium Autocomplete (has FIM)">
-<img src = "https://help.codeium.com/hc/article_attachments/27431559312795"/>
-</Frame>
-
-<Frame caption = "Codeium Autocomplete (no FIM)">
-<img src = "https://help.codeium.com/hc/article_attachments/27431596676891"/>
-</Frame>
-
-Note that the non-FIM model suggests a generic docstring based on only the preceding line with the function signature. 
-
-# Shortcuts
-
-Use these shortcuts to speed up your workflow: 
-
-- Tab = accept suggestion
-
-- Cmd + Left Arrow = accept next word in suggestion
-
-- Option + ] = next suggestion
-
-- Esc = clear suggestions 
-
-# Best Practices
-
-* Avoid trying to manually invoke autocomplete
-
-    * Allow this modality to be a passive uplift to your normal workflow
-
-    * Writing prompts in comments is bad practice! (see command below)
-
-    * Decorating your code with quality comments and information variable / function names yields the best results
-
-* Snoozing autocomplete
-
-    * Available on VS Code in 1.8.66
-
-    * Click the Codeium button in the bottom right and you will see the button
+Click the Codeium button in the bottom right and you will see the button to toggle it on and off.

@@ -2,6 +2,20 @@
 title: Overview
 description: 'What is Context?'
 ---
+
+By default, user messages will contain the text you type, but you can also pin any scope of code (repository, directory, file, function, etc). This tells Codeium to prioritize this specific code when it gives suggestions in both Autocomplete and Chat.
+
+<Tip>Click on the `CONTEXT` tab next to the `CHAT` tab</Tip>
+
+<video
+  autoPlay
+  muted
+  loop
+  playsInline
+  className="w-full aspect-video"
+  src="https://exafunction.github.io/public/demos/context_pinning_agnostic.mp4"
+></video>
+
 # Background: the value of Context
 
 Say you wanted to ask a question about a specialized set of documents (eg. a private codebase) that the AI was never trained on. One option is to "fine tune" the AI model on that set of documents. With the latest AI models, though, this is no longer strictly necessary. Instead, you can just include the documents as "context" to the original in the model input, and the model will use that information and respond as if it has known about that document all along.

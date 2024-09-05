@@ -50,11 +50,11 @@
       "group": "Overview",
       "pages": [
         "introduction",
-        "compatibleIDEs",
         {
           "group": "Getting Started",
           "pages": [
             "vscode/gettingstarted/installation",
+            "vscode/gettingstarted/compatibleIDEs",
             "vscode/gettingstarted/quickstart"
           ]
         }
@@ -66,25 +66,20 @@
         {
           "group": "Autocomplete",
           "pages": [
-            "vscode/autocomplete/overview",
-            "vscode/autocomplete/exploration",
-            "vscode/autocomplete/tipsmyths"
+            "vscode/autocomplete/overview"
           ]
         },
         {
           "group": "Chat",
           "pages": [
             "vscode/chat/overview",
-            "vscode/chat/codelenses",
             "vscode/chat/atmentions"
           ]
         },
         {
           "group": "Command",
           "pages": [
-            "vscode/command/overview",
-            "vscode/command/generation",
-            "vscode/command/edits"
+            "vscode/command/overview"
           ]
         }
       ]
