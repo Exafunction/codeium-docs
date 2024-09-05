@@ -54,8 +54,7 @@
           "group": "Getting Started",
           "pages": [
             "vscode/gettingstarted/installation",
-            "vscode/gettingstarted/compatibleIDEs",
-            "vscode/gettingstarted/quickstart"
+            "vscode/gettingstarted/compatibleIDEs"
           ]
         }
       ]
