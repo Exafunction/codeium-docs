@@ -88,50 +88,7 @@
       "group": "Context Awareness",
       "pages": [
         "vscode/contextawareness/overview",
-        "vscode/contextawareness/contextpinning",
-        "vscode/contextawareness/customcontext"
-      ]
-    },
-    {
-      "group": "JetBrains",
-      "pages": [
-        {
-          "group": "Docs",
-          "pages": [
-            {
-              "group": "Getting Started",
-              "pages": [
-                "jetbrains/gettingstarted/installation",
-                "jetbrains/gettingstarted/quickstart"
-              ]
-            },
-            {
-              "group": "Autocomplete",
-              "pages": [
-                "jetbrains/autocomplete/overview",
-                "jetbrains/autocomplete/acceleration",
-                "jetbrains/autocomplete/exploration",
-                "jetbrains/autocomplete/tipsmyths"
-              ]
-            },
-            {
-              "group": "Chat",
-              "pages": [
-                "jetbrains/chat/overview",
-                "jetbrains/chat/codelenses",
-                "jetbrains/chat/atmentions"
-              ]
-            },
-            {
-              "group": "Command",
-              "pages": [
-                "jetbrains/command/overview",
-                "jetbrains/command/generation",
-                "jetbrains/command/edits"
-              ]
-            }
-          ]
-        }
+        "vscode/contextawareness/contextpinning"
       ]
     }
   ],
