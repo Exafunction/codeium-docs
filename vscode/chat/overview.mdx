@@ -9,7 +9,7 @@ This feature is only supported in: VS Code, JetBrains, Eclipse, Visual Studio.
 
 Codeium Chat enables you to chat with your codebase in natural language from inside the IDE itself. It leverages code snippets from the relevant parts of your codebase to provide the most accurate, and grounded answers. It's like ChatGPT if it had full context about your codebase. 
 
-You can open Codeium Chat from the side panel or use the shortcut `Shift` + `Cmd` + `A`.
+You can open Codeium Chat from the side panel or use the shortcut `Shift` + `Cmd`/`Ctrl` + `A`.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0I0HAeZGKjQ?si=qjy6UtoVs9_SFnnE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -20,18 +20,21 @@ Just like with Autocomplete, Codeium Chat grabs snippets from relevant parts of 
 
 ### @ Mentions 
 
-Because of our advanced parsing system, you can avoid copy-pasting your reference code and easily add more custom context in Chat just by using @ Mentions. Avoid copy-pasting code and help guide the AI to what you know to be relevant by referencing your functions, classes, files, directories, and repositories.
+Because of our advanced parsing system, you can easily add more custom context in Chat just by using @ Mentions. Avoid copy-pasting code and help guide the AI to what you know to be relevant by referencing your functions, classes, files, directories, and repositories.
 
-For more information, please see our [@ Mentions](/vscode/chat/atmentions.mdx) page.
+For more information, please see our [@ Mentions](/vscode/chat/atmentions) page.
 
-<video
-  autoPlay
-  muted
-  loop
-  playsInline
-  className="w-full aspect-video"
-  src="https://exafunction.github.io/public/videos/chat/inline-mention.mp4"
-></video>
+To persist certain context, please see our [Context Pinning](/vscode/contextawareness/contextpinning) page.
+
+<img src="https://raw.githubusercontent.com/Exafunction/exafunction.github.io/main/public/chat/chat_mentions_announce.gif?token=GHSAT0AAAAAACWKFPTNNJALKWTFTPKQQD4SZW2MPMA"/>
+
+### Slash Commands
+
+Text-based triggers for common workflows, building on top of Code Lenses and right click dropdown on highlight. We are starting with simply typing `/explain` in the Chat input, but [let us know](https://codeium.canny.io/feature-requests/) what other common workflows you want wrapped in a slash command.
+
+### Copy and Insert
+
+Easily `Copy` to clipboard and/or `Insert` snippets of suggested code directly from the Chat.
 
 ### Inline Citations
 
@@ -48,25 +51,32 @@ In an effort to provide insight into Chat's responses, our reasoning engine will
 
 ### Code Lenses
 
-Code lenses will appear right above functions and class definitions and offer shortcuts to common tasks that developers want to accomplish such as Generate Docstrings, Explain Code, and Refactor code. Clicking on these shortcuts will automatically invoke Codeium Chat with the relevant prompt and context, giving developers a 1-click solution for common tasks. 
+Code lenses will appear right above functions and class definitions and offer shortcuts to common tasks that developers want to accomplish such as `Generate` Docstrings, `Explain` Code, and `Refactor` code. Clicking on these shortcuts will automatically invoke Codeium Chat with the relevant prompt and context, giving developers a 1-click solution for common tasks. 
+
+Read more docs on [Code Lenses](/vscode/chat/codelenses.mdx).
 
 <img src="https://help.codeium.com/hc/article_attachments/27458772589979"/>
 
-Please note that this function can be disabled if you toggle the Codeium: Enable Code Lens setting in VS Code.
+<Note>This function can be disabled if you toggle the Codeium: Enable Code Lens setting in VS Code.</Note>
 
-### Context Pinning: 
+### Regenerate with Context
 
-By default, user messages will contain the text you type, but you can also pin any scope of code (repository, directory, file, function, etc). This tells Codeium to prioritize this specific code when it gives suggestions in both Autocomplete and Chat.
+Our system makes a judgment call whether a question requires context from the codebase or is just a generic question around software development concepts. However, if you want to force the use of codebase context, you can quickly rerun with context with a single button.
 
-For more information, please see our [Context Pinning](/vscode/contextawareness/contextpinning.mdx) page.
+<img src="https://exafunction.github.io/public/images/chat/regenerate-with-context.png"/>
 
-<Tip>Click on the `CONTEXT` tab next to the `CHAT` tab</Tip>
+### Chat Insights
 
-<video
-  autoPlay
-  muted
-  loop
-  playsInline
-  className="w-full aspect-video"
-  src="https://exafunction.github.io/public/demos/context_pinning_agnostic.mp4"
-></video>
+Lots of work is clearly going on under the hood for every Chat message, and now you can click the stats icon to see these statistics for yourself. Was context used? How long did the various stages take? How many context items were considered?
+
+<img src="https://exafunction.github.io/public/images/chat/stats.png"/> 
+
+### Chat History 
+
+Continue past conversations and quickly recall responses in the top right of the Codeium side panel with the `Chat` tab open. Next to the chat history, you can also click on the `⋮` button to export your conversation.
+
+### Chat Settings
+
+Click on the `Settings` tab in the Codeium panel in order to update Theme Preference and Font settings. 
+
+You can also pop the Chat window out into the editor panel by clicking the file button in the top right of the Codeium panel. 

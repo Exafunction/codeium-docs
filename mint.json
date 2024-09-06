@@ -54,7 +54,8 @@
           "group": "Getting Started",
           "pages": [
             "vscode/gettingstarted/installation",
-            "vscode/gettingstarted/compatibleIDEs"
+            "vscode/gettingstarted/compatibleIDEs",
+            "vscode/gettingstarted/profiles"
           ]
         }
       ]
@@ -72,7 +73,9 @@
           "group": "Chat",
           "pages": [
             "vscode/chat/overview",
-            "vscode/chat/atmentions"
+            "vscode/chat/models",
+            "vscode/chat/atmentions",
+            "vscode/chat/codelenses"
           ]
         },
         {
@@ -87,7 +90,8 @@
       "group": "Context Awareness",
       "pages": [
         "vscode/contextawareness/overview",
-        "vscode/contextawareness/contextpinning"
+        "vscode/contextawareness/contextpinning",
+        "vscode/contextawareness/custominstructions"
       ]
     }
   ],
