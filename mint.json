@@ -50,12 +50,12 @@
       "group": "Overview",
       "pages": [
         "introduction",
-        "compatibleIDEs",
         {
           "group": "Getting Started",
           "pages": [
             "vscode/gettingstarted/installation",
-            "vscode/gettingstarted/quickstart"
+            "vscode/gettingstarted/compatibleIDEs",
+            "vscode/gettingstarted/profiles"
           ]
         }
       ]
@@ -66,25 +66,22 @@
         {
           "group": "Autocomplete",
           "pages": [
-            "vscode/autocomplete/overview",
-            "vscode/autocomplete/exploration",
-            "vscode/autocomplete/tipsmyths"
+            "vscode/autocomplete/overview"
           ]
         },
         {
           "group": "Chat",
           "pages": [
             "vscode/chat/overview",
-            "vscode/chat/codelenses",
-            "vscode/chat/atmentions"
+            "vscode/chat/models",
+            "vscode/chat/atmentions",
+            "vscode/chat/codelenses"
           ]
         },
         {
           "group": "Command",
           "pages": [
-            "vscode/command/overview",
-            "vscode/command/generation",
-            "vscode/command/edits"
+            "vscode/command/overview"
           ]
         }
       ]
@@ -94,49 +91,7 @@
       "pages": [
         "vscode/contextawareness/overview",
         "vscode/contextawareness/contextpinning",
-        "vscode/contextawareness/customcontext"
-      ]
-    },
-    {
-      "group": "JetBrains",
-      "pages": [
-        {
-          "group": "Docs",
-          "pages": [
-            {
-              "group": "Getting Started",
-              "pages": [
-                "jetbrains/gettingstarted/installation",
-                "jetbrains/gettingstarted/quickstart"
-              ]
-            },
-            {
-              "group": "Autocomplete",
-              "pages": [
-                "jetbrains/autocomplete/overview",
-                "jetbrains/autocomplete/acceleration",
-                "jetbrains/autocomplete/exploration",
-                "jetbrains/autocomplete/tipsmyths"
-              ]
-            },
-            {
-              "group": "Chat",
-              "pages": [
-                "jetbrains/chat/overview",
-                "jetbrains/chat/codelenses",
-                "jetbrains/chat/atmentions"
-              ]
-            },
-            {
-              "group": "Command",
-              "pages": [
-                "jetbrains/command/overview",
-                "jetbrains/command/generation",
-                "jetbrains/command/edits"
-              ]
-            }
-          ]
-        }
+        "vscode/contextawareness/custominstructions"
       ]
     }
   ],
