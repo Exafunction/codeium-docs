@@ -53,9 +53,9 @@
         {
           "group": "Getting Started",
           "pages": [
-            "vscode/gettingstarted/installation",
-            "vscode/gettingstarted/compatibleIDEs",
-            "vscode/gettingstarted/analytics"
+            "gettingstarted/installation",
+            "gettingstarted/compatibleIDEs",
+            "gettingstarted/analytics"
           ]
         }
       ]
@@ -66,22 +66,22 @@
         {
           "group": "Autocomplete",
           "pages": [
-            "vscode/autocomplete/overview"
+            "autocomplete/overview"
           ]
         },
         {
           "group": "Chat",
           "pages": [
-            "vscode/chat/overview",
-            "vscode/chat/models",
-            "vscode/chat/atmentions",
-            "vscode/chat/codelenses"
+            "chat/overview",
+            "chat/models",
+            "chat/atmentions",
+            "chat/codelenses"
           ]
         },
         {
           "group": "Command",
           "pages": [
-            "vscode/command/overview"
+            "command/overview"
           ]
         }
       ]
@@ -89,9 +89,9 @@
     {
       "group": "Context Awareness",
       "pages": [
-        "vscode/contextawareness/overview",
-        "vscode/contextawareness/contextpinning",
-        "vscode/contextawareness/custominstructions"
+        "contextawareness/overview",
+        "contextawareness/contextpinning",
+        "contextawareness/custominstructions"
       ]
     }
   ],
