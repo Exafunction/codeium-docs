@@ -55,7 +55,7 @@
           "pages": [
             "vscode/gettingstarted/installation",
             "vscode/gettingstarted/compatibleIDEs",
-            "vscode/gettingstarted/profiles"
+            "vscode/gettingstarted/analytics"
           ]
         }
       ]
