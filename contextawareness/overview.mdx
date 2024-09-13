@@ -3,27 +3,25 @@ title: Overview
 description: ''
 ---
 
-Codeium has the most advanced context-awareness engine, leading to higher quality suggestions, fewer hallucinations, and more accepted code that actually makes it past code reviews.
+Codeium's proprietary context engine builds a deep understanding of your codebase by using multiple heuristics to figure out the most relevant code snippets for each request, leading higher quality suggestions and less hallucinations. 
 
-Historically, you had to "fine tune" the AI model on a certain set of documents, but with Codeium, this is no longer necessary. 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/yy2umoeitGo?si=e16vsJqYTPn_g55R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+Historically, you had to specifically "fine tune" the model but with Codeium, this is no longer necessary. 
 
 <Note>Codeium does offer full fine-tuning for enterprise, and the best solution combines the two features together. However, the Context Module is highly effective at personalization on its own.</Note>
 
-## Default Context Awareness
+## Default Context
 
-Out of the box, Codeium takes advantage of multiple relevant sources of context. 
+Out of the box, Codeium takes multiple relevant sources of context into consideration. 
 
-- Your IDE and open files. Codeium looks at the current file and other open files in the IDE since these are often highly relevant to the code you are currently writing. 
+- The current file and other open files in your IDE as these are often highly relevant to the code being written. 
 
-- Your local repository. Codeium also indexes your entire local codebase (even the files that are not open). Codeium's retrieval engine will automatically pull in code snippets that are relevant to the query you are making or the code you are writing. 
+- The entire local codebase is then indexed (even the files that are not open), and relevant code snippets are pulled in by Codeium's retrieval engine as you make queries or write code.
 
 - For Teams and Enterprise users, Codeium can also index remote repositories. This is useful for companies where the development organization works across multiple repositories.
 
 ## Context Pinning
 
-You can also customize your context engine by simply pinning any scope of code (repository, directory, file, function, etc). This tells Codeium to prioritize this specific code when it gives suggestions in both Autocomplete and Chat.
+You can also customize the context engine by pinning any scope of code (repository, directory, file, function, etc). These take priority in the context engine for any future suggestions.
 
 Read more about [Context Pinning](/contextawareness/contextpinning.mdx) here.
 
@@ -40,7 +38,7 @@ Read more about [Context Pinning](/contextawareness/contextpinning.mdx) here.
 
 ## @ Mentions
 
-Because of our advanced parsing system, you can easily add more custom context in Chat just by using @ Mentions. Help guide the AI to what you know to be relevant by referencing your functions, classes, files, directories, and repositories.
+Additional custom context can be added to your Chat prompt by using @ Mentions.
 
 For more information, please see our [@ Mentions](/chat/atmentions) page.
 
