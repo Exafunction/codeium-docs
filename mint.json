@@ -49,7 +49,6 @@
     {
       "group": "Overview",
       "pages": [
-        "introduction",
         {
           "group": "Getting Started",
           "pages": [
@@ -75,7 +74,6 @@
           "pages": [
             "chat/overview",
             "chat/models",
-            "chat/atmentions",
             "chat/codelenses"
           ]
         },
@@ -91,8 +89,14 @@
       "group": "Context Awareness",
       "pages": [
         "contextawareness/overview",
-        "contextawareness/contextpinning",
-        "contextawareness/custominstructions"
+        {
+          "group": "Advanced",
+          "pages": [
+            "contextawareness/atmentions",
+            "contextawareness/contextpinning",
+            "contextawareness/custominstructions"
+          ]
+        }
       ]
     }
   ],
