@@ -2,6 +2,7 @@
 title: 'Overview'
 description: ''
 ---
+<Note>Command is currently only available in VS Code and JetBrains IDEs.</Note>
 Codeium Command allows you to generate new or edit existing code via natural language inputs _directly in the editor window._ 
 
 To invoke Command, hit `Ctrl`/`Cmd` + `I`. From there, you can enter a prompt in natural language and Codeium will provide a multiline suggestion that you can accept or reject. 
@@ -13,10 +14,10 @@ You can also use Command to edit existing functions as shown below. Simply highl
 
 # Best Practices
 
-- Command is great for command based, in-line changes
+Command is great for file-scoped, in-line changes that you can describe as an instruction in natural language.
+Here are some pointers to keep in mind:
 
-    - This model is training to be especially good at instruction following
+    - The model that powers Command is larger than the one powering autocomplete.
+    It is slower but more capable, and it is trained to be especially good at instruction-following.
 
-    - This model runs on a larger model than autocomplete
-
-    - Make sure to highlight the entire block of code you want Command to apply the diff on
+    - If you highlight a block of code before invoking Command, it will edit the selection. Otherwise, it will do a pure generation.
