@@ -49,14 +49,9 @@
     {
       "group": "Overview",
       "pages": [
-        {
-          "group": "Getting Started",
-          "pages": [
-            "getting-started/installation",
-            "getting-started/compatibility",
-            "getting-started/analytics"
-          ]
-        }
+            "overview/getting-started",
+            "overview/compatibility",
+            "overview/analytics"
       ]
     },
     {
