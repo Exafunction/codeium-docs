@@ -4,7 +4,7 @@ title: 'Installation'
 description: 'Welcome to Codeium'
 ---
 
-**Codeium** is an AI toolkit that empowers and is loved by hundreds of thousands of developers with best in class Autocomplete, Chat, Code Review, code generation, search, and more.
+**Codeium** is an AI toolkit that empowers and is loved by hundreds of thousands of developers with best in class tools to support every stage of the SDLC including but not limited to Autocomplete, Command, and Chat.
 
 Our models and features have been deliberately trained and optimized to have a deep understanding of your codebase to provide the best possible suggestions on the market.
 
@@ -25,11 +25,36 @@ Visit www.codeium.com/download to get started.
 
         <img src = "https://exafunction.github.io/public/university_videos/misc_content/installation_auth.png"/>
       </Step>
-      <Step title = "Create Account">
+      <Step title = "Sign In">
+
+        If you are not signed in, please sign in with your account details. Once you sign in, you will be redirected back to Visual Studio Code via pop-up.
 
         If you do not have a Codeium account yet, you will be redirected to create an account.
         
-        <img style={{ display: 'block', margin: '0 auto', width: 400 }} src = "https://exafunction.github.io/public/university_videos/misc_content/create.png"/>
+        _If you are using a browser-based IDE, you will be routed to instructions on how to complete authentication by providing an access token._
+
+      </Step>
+      <Step title = "All done!">
+
+        Once you're redirected back to VS Code and your Language Server is done installing, you can start using Codeium!            
+        
+        You should see a notification on the bottom right to indicate the progress of the download.
+      </Step>
+    </Steps>
+
+  </Tab>
+  <Tab title="JetBrains">
+    <Steps>
+      <Step title = "Login">
+
+        After installation, you will be prompted to log into Codeium.
+        
+        <img src = "/assets/jetbrainslogin.png"/>
+
+        <Tip>If you're having trouble logging in, try restarting your IDE and try again.</Tip>
+      </Step>
+      <Step title = "Create Account">
+        If you do not have a Codeium account yet, you will be asked to create an account.
       </Step>
       <Step title = "Sign In">
 
@@ -42,15 +67,22 @@ Visit www.codeium.com/download to get started.
 
         Once you are all signed in, Codeium will start downloading the language server. This is the program that actually communicates with our APIs to let you use Codeium. Depending on your internet connection, this download may take a few minutes.
         
-        You should see a notification on the bottom right to indicate the progress of the download.
-
-        <img src = "https://exafunction.github.io/public/university_videos/misc_content/download.png"/>
       </Step>
-      <Step title = "All done!"/>
+      <Step title = "All done!">
+
+        Check out our welcome sequence popup to onboard onto our core feature set!
+
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="w-full aspect-video"
+          src="/assets/jetbrainswelcome.mp4">
+        </video>
+
+      </Step>
     </Steps>
 
-  </Tab>
-  <Tab title="Jetbrains">
-    ✌️ Here's content that's only inside the second Tab.
   </Tab>
 </Tabs>
