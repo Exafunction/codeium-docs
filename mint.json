@@ -73,8 +73,7 @@
           "group": "Chat",
           "pages": [
             "chat/overview",
-            "chat/models",
-            "chat/codelenses"
+            "chat/models"
           ]
         },
         {
