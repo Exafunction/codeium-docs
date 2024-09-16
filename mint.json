@@ -79,7 +79,8 @@
         {
           "group": "Command",
           "pages": [
-            "command/overview"
+            "command/overview",
+            "command/related-features"
           ]
         }
       ]
