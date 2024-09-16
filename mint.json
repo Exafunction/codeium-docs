@@ -52,9 +52,9 @@
         {
           "group": "Getting Started",
           "pages": [
-            "gettingstarted/installation",
-            "gettingstarted/compatibleIDEs",
-            "gettingstarted/analytics"
+            "getting-started/installation",
+            "getting-started/compatibility",
+            "getting-started/analytics"
           ]
         }
       ]
@@ -88,13 +88,13 @@
     {
       "group": "Context Awareness",
       "pages": [
-        "contextawareness/overview",
+        "context-awareness/overview",
         {
           "group": "Advanced",
           "pages": [
-            "contextawareness/atmentions",
-            "contextawareness/contextpinning",
-            "contextawareness/custominstructions"
+            "context-awareness/at-mentions",
+            "context-awareness/context-pinning",
+            "context-awareness/custom-instructions"
           ]
         }
       ]
