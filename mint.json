@@ -88,15 +88,7 @@
     {
       "group": "Context Awareness",
       "pages": [
-        "context-awareness/overview",
-        {
-          "group": "Advanced",
-          "pages": [
-            "context-awareness/at-mentions",
-            "context-awareness/context-pinning",
-            "context-awareness/custom-instructions"
-          ]
-        }
+        "context-awareness/overview"
       ]
     }
   ],

@@ -31,7 +31,7 @@ It combines thoughtfully-designed, built-in context retrieval with optional user
     You can also open the chat in a popped-out browser window by clicking `Tools > Codeium > Open Codeium Chat in Browser` in the top menu bar.
   </Tab>
 </Tabs>
-## @ Mentions 
+## @-Mentions 
 
 In any given chat message you send, you can explicitly refer to context items from within the chat input by prefixing a word with `@`.
 Context items can be functions, classes, directories and files in your codebase, remote repositories, or (in VS Code only) the contents of your terminal.
@@ -55,6 +55,7 @@ by configuring the `Context` tab in the chat panel.
 In this tab, you can see:
 - **Custom Chat Instructions**: a short prompt guideline like "Respond in Kotlin and assume I have little familiarity with it" to orient the model towards a certain type of response.
 - **Pinned Contexts**: items from your codebase like files, directories, and code snippets that you would like explicitly for the model to take into account.
+  See also [Context Pinning](/context-awareness/context-pinning).
 - **Active Document**: a marker for your currently active file, which receives special focus.
 - **Local Indexes**: a list of local repositories that the Codeium context engine has indexed.
 

@@ -1,46 +1,61 @@
 ---
 title: Overview
-description: ''
+description: 'On codebase context and related features'
 ---
+Codeium's proprietary context engine builds a deep understanding of your codebase.
 
-Codeium's proprietary context engine builds a deep understanding of your codebase by using multiple heuristics to figure out the most relevant code snippets for each request, leading higher quality suggestions and less hallucinations. 
+Historically, code-generation approaches focused on fine-tuning large language models (LLMs) on a codebase,
+which is difficult to scale to the needs of every individual user.
+A more recent and popular approach leverages retrieval-augmented generation (RAG),
+which focuses on techniques to construct highly relevant, context-rich prompts
+to elicit accurate answers from an LLM.
 
-Historically, you had to specifically "fine tune" the model but with Codeium, this is no longer necessary. 
+The Codeium team has taken an extremely thoughtful and optimized RAG approach to codebase context,
+and has seen great success in producing high-quality suggestions and few hallucinations.
+This applies across the board to Autocompete, Chat, and Command. 
 
-<Note>Codeium does offer full fine-tuning for enterprise, and the best solution combines the two features together. However, the Context Module is highly effective at personalization on its own.</Note>
+<Note>
+  Codeium offers full fine-tuning for enterprises, and the best solution combines fine-tuning with RAG.
+  Nonetheless, Codeium's RAG approach is highly effective at codebase context personalization on its own.
+</Note>
 
 ## Default Context
 
 Out of the box, Codeium takes multiple relevant sources of context into consideration. 
-
-- The current file and other open files in your IDE as these are often highly relevant to the code being written. 
-
-- The entire local codebase is then indexed (even the files that are not open), and relevant code snippets are pulled in by Codeium's retrieval engine as you make queries or write code.
-
-- For Teams and Enterprise users, Codeium can also index remote repositories. This is useful for companies where the development organization works across multiple repositories.
+- The current file and other open files in your IDE, which are often very relevant to the code you are currently writing. 
+- The entire local codebase is then indexed (including files that are not open),
+and relevant code snippets are sourced by Codeium's retrieval engine as you write code, ask questions, or invoke commands.
+- For Teams and Enterprise users, Codeium can also index remote repositories.
+This is useful for companies whose development organization works across multiple repositories.
 
 ## Context Pinning
 
-You can also customize the context engine by pinning any scope of code (repository, directory, file, function, etc). These take priority in the context engine for any future suggestions.
+Developers have the option to offer additional guidance by pinning custom context. 
+You can find this option under the [context tab of the chat panel](/chat/overview#persistent-context).
 
-Read more about [Context Pinning](/contextawareness/contextpinning.mdx) here.
+You can choose to pin directories, files, repositories, or code context items (functions, classes, etc.) as persistent context.
+Models reference these items for every suggestion, across Autocomplete, Chat, and Command.
 
-<Tip>Click on the `CONTEXT` tab next to the `CHAT` tab</Tip>
+<Frame>
+    <img src="/assets/pinned_context.png"/>
+</Frame>
 
-<video
-  autoPlay
-  muted
-  loop
-  playsInline
-  className="w-full aspect-video"
-  src="https://exafunction.github.io/public/demos/context_pinning_agnostic.mp4"
-></video>
+### Best Practices
+Context Pinning is great when your task in your current file depends on information from other files. 
+Try to pin only what you need. Pinning too much may slow down or negatively impact model performance.
 
-## @ Mentions
+Here are some ideas for effective context pinning:
+- Module Definitions: pinning class/struct definition files that are inside your repo but in a module separate from your currently active file.
+- Internal Frameworks/Libraries: pinning directories with code examples for using frameworks/libraries.
+- Specific Tasks: pinning a file or folder defining a particular interface (e.g., `.proto` files, abstract class files, config templates).
+- Current Focus Area: pinning the "lowest common denominator" directory containing the majority of files needed for your current coding session.
+- Testing: pinning a particular file with the class you are writing unit tests for.
 
-Additional custom context can be added to your Chat prompt by using @ Mentions.
+## Chat-Specific Context Features
 
-For more information, please see our [@ Mentions](/chat/atmentions) page.
+When conversing with Codeium Chat, you have various ways of leveraging codebase context,
+like [@-mentions](/chat/overview/#mentions) or custom guidelines.
+See the [Chat page](/chat/overview) for more information.
 
 <video
   autoPlay
