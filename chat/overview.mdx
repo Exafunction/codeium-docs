@@ -4,29 +4,62 @@ description: 'Converse with a codebase-aware AI'
 ---
 
 <Note>
-Chat and its related features are only supported in: VS Code, JetBrains, Eclipse, X-Code, Visual Studio.
+Chat and its related features are only supported in: VS Code, JetBrains IDEs, Eclipse, X-Code, and Visual Studio.
 </Note>
 
 Codeium Chat enables you to talk to your codebase from within your editor. 
+Chat is powered by our industry-leading [context awareness](/context-awareness/overview.mdx) engine.
+It combines thoughtfully-designed, built-in context retrieval with optional user guidance to provide accurate and grounded answers.
 
-Open Chat from the side panel or use the shortcut `Shift` + `Cmd`/`Ctrl` + `A`
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0I0HAeZGKjQ?si=qjy6UtoVs9_SFnnE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-Chat is powered by our industry leading [Context Awareness](/contextawareness/overview.mdx) engine is the secret sauce that makes Codeium great. By grabbing snippets from relevant parts of your codebase, our language models are then able to provide more accurate, grounded answers.
-
-
+<Tabs>
+  <Tab title="VS Code">
+    In VS Code, Codeium Chat can be found by default on the left sidebar.
+    If you wish to move it elsewhere, you can click and drag the Codeium icon and relocate it as desired.
+    <Frame>
+      <img src="/assets/chat_vscode_where_to_find.png"/>
+    </Frame>
+    You can use `⌘+⇧+A` on Mac or `Ctrl+⇧+A` on Windows/Linux to open the chat panel and toggle focus between it and the editor.
+    You can also pop the chat window out of the IDE entirely by clicking the page icon at the top of the chat panel.
+  </Tab>
+  <Tab title="JetBrains">
+    In JetBrains IDEs, Codeium Chat can be found by default on the right sidebar.
+    If you wish to move it elsewhere, you can click and drag the Codeium icon and relocate it as desired.
+    <Frame>
+      <img src="/assets/chat_jetbrains_where_to_find.png"/>
+    </Frame>
+    You can use `⌘+⇧+L` on Mac or `Ctrl+⇧+L` on Windows/Linux to open the chat panel while you are typing in the editor.
+    You can also open the chat in a popped-out browser window by clicking `Tools > Codeium > Open Codeium Chat in Browser` in the top menu bar.
+  </Tab>
+</Tabs>
 ## @ Mentions 
 
-Easily add custom context in your Chat prompt just by using @ Mentions to reference your functions, classes, files, directories, and repositories.
+In any given chat message you send, you can explicitly refer to context items from within the chat input by prefixing a word with `@`.
+Context items can be functions, classes, directories and files in your codebase, remote repositories, or (in VS Code only) the contents of your terminal.
 
-For more information, please see our [@ Mentions](/chat/atmentions) page.
+<Frame>
+  <img src="/assets/at_mentions.png"/>
+</Frame>
 
-To persist certain context, you can also check out our [Context Pinning](/contextawareness/contextpinning) page.
+## Persistent Context
+
+You can instruct the chat model to use certain context throughout a conversation and across different converstions
+by configuring the `Context` tab in the chat panel.
+
+<Frame caption="Chat shows you the context it is considering.">
+  <img src="/assets/chat_context.png"/>
+</Frame>
+
+In this tab, you can see:
+- **Custom Chat Instructions**: a short prompt guideline like "Respond in Kotlin and assume I have little familiarity with it" to orient the model towards a certain type of response.
+- **Pinned Contexts**: items from your codebase like files, directories, and code snippets that you would like explicitly for the model to take into account.
+- **Active Document**: a marker for your currently active file, which receives special focus.
+- **Local Indexes**: a list of local repositories that the Codeium context engine has indexed.
 
 ## Slash Commands
 
-Text-based triggers for common workflows, building on top of Code Lenses and right click dropdown on highlight. We are starting with simply typing `/explain` in the Chat input, but [let us know](https://codeium.canny.io/feature-requests/) what other common workflows you want wrapped in a slash command.
+You can prefix a message with `/explain` to ask the model to explain something of your choice.
+Currently, `/explain` is the only supported slash command.
+[Let us know](https://codeium.canny.io/feature-requests/) if there are other common workflows you want wrapped in a slash command.
 
 ## Copy and Insert
 
@@ -34,43 +67,53 @@ Easily `Copy` to clipboard and/or `Insert` snippets of suggested code directly f
 
 ## Inline Citations
 
-In an effort to provide insight into Chat's responses, our reasoning engine will pull in the most relevant context it used from your codebase.
+Chat is aware of code context items, and its responses often contain linked references to snippets of code in your files.
 
-<video
-  autoPlay
-  muted
-  loop
-  playsInline
-  className="w-full aspect-video"
-  src="https://exafunction.github.io/public/videos/chat/inline-citations.mp4">
-</video>
-
-## Code Lenses
-
-Code lenses will appear right above functions and class definitions and offer shortcuts to `Explain` and `Refactor` code, or to `Generate Docstrings`. Clicking on these shortcuts will invoke Codeium Chat with the relevant prompt and context.
-
-Read more about Code Lenses in the Chat [Tips](/chat/codelenses).
+<Frame>
+  <video
+    autoPlay
+    muted
+    loop
+    playsInline
+    src="https://exafunction.github.io/public/videos/chat/inline-citations.mp4">
+  </video>
+</Frame>
 
 ## Regenerate with Context
 
-By default, Codeium makes a judgment call whether a question is general or if it requires codebase context. 
+By default, Codeium makes a judgment call whether any given question is general or if it requires codebase context. 
 
-If you want to force the use of codebase context, you can quickly rerun with context with a single button.
+You can force the model to use codebase context by submitting your question with `⌘⏎`.
+For a question that has already received a response, you rerun with context by clicking the sparkle icon.
 
-<img src="https://exafunction.github.io/public/images/chat/regenerate-with-context.png"/>
+<Frame>
+  <img src="/assets/chat_regenerate_with_context.png"/>
+</Frame>
 
-## Chat Insights
+## Stats for Nerds
 
-Lots of work is clearly going on under the hood for every Chat message, and now you can click the stats icon to see these statistics for yourself. Was context used? How long did the various stages take? How many context items were considered?
+Lots of things happen under the hood for every chat message. You can click the stats icon to see these statistics for yourself.
 
-<img src="https://exafunction.github.io/public/images/chat/stats.png"/> 
+<Frame caption="There are numbers here.">
+  <img src="/assets/chat_stats_for_nerds.png"/>
+</Frame>
 
 ## Chat History 
 
-Continue past conversations and quickly recall responses in the top right of the Codeium side panel with the `Chat` tab open. Next to the chat history, you can also click on the `⋮` button to export your conversation.
+To revisit past conversations, click the history icon at the top of the chat panel. 
+You can click the `+` to create a new conversation, and
+you can click the `⋮` button to export your conversation.
 
-## Chat Settings
+<Frame caption="We got history.">
+  <img src="/assets/chat_history.png"/>
+</Frame>
 
-Click on the `Settings` tab in the Codeium panel in order to update Theme Preference and Font settings. 
+## Settings
 
-You can also pop the Chat window out into the editor panel by clicking the file button in the top right of the Codeium panel. 
+Click on the `Settings` tab to update your theme preferences (light or dark) and font size. 
+The settings panel also gives you an option to download diagnostics, which are debug logs that can be helpful
+for the Codeium team to debug an issue should you encounter one.
+
+<Frame caption="I have a 28-day Codeium streak.">
+  <img src="/assets/chat_settings.png"/>
+</Frame>
