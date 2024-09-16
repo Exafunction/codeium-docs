@@ -8,49 +8,93 @@ description: 'Welcome to Codeium'
 
 Our models and features have been trained and optimized to have a deep understanding of your codebase to provide the best possible suggestions on the market.
 
-Visit [our download page](https://codeium.com/download) to get started.
-
-<Note>Self-hosted functionality for enterprises may differ. Please refer to your enterprise portal.</Note>
-
 ## Set Up
-
+Our extension for Visual Studio Code and our plugin for JetBrains are our most popular services.
+The installation steps for these two are given below.
+For our other IDEs and editors like Eclipse, Visual Studio, Neovim, Google Colab, and more, visit [our download page](https://codeium.com/download) to get started.
+<Note>Self-hosted functionality for enterprises may differ. If you are an enterprise user, please refer to your enterprise portal.</Note>
 <Tabs>
   <Tab title="Visual Studio Code">
     <Steps>
-      <Step title = "Authorize">
-
-        After installation, you will be prompted by Visual Studio Code on the bottom right to authorize Codeium. If not, you will need to sign in to your Codeium account in the bottom left Accounts tab of your Visual Studio Code window.
-        
-        <Tip>If you get an error message indicating that the browser cannot open a link from Visual Studio Code, you may need to update your browser and restart the authorization flow.</Tip>
-
-        <img src = "https://exafunction.github.io/public/university_videos/misc_content/installation_auth.png"/>
+      <Step title="Install Extension">
+        Find the Codeium extension in the VS Code Marketplace and install it.
+        <Frame>
+          <img src="/assets/vscode_extension_page.png"/>
+        </Frame>
       </Step>
-      <Step title = "Create Account">
-
-        If you do not have a Codeium account yet, you will be redirected to create an account.
-        
-        <img style={{ display: 'block', margin: '0 auto', width: 400 }} src = "https://exafunction.github.io/public/university_videos/misc_content/create.png"/>
+      <Step title="Authorize">
+        After installation, VS Code with prompt you with a notification in the bottom right corner to log in to Codeium.
+        Equivalently, you can log in to Codeium via the profile icon at the bottom of the left sidebar.
+        <Frame>
+          <img src="/assets/vscode_login_init_left.png"/>
+        </Frame>
+        <Note>If you get an error message indicating that the browser cannot open a link from Visual Studio Code, you may need to update your browser and restart the authorization flow.</Note>
+        If you do not have an account or otherwise are not already logged in online, you will be prompted to create an account or login.
+        <Frame>
+          <img src="/assets/login_prompt_webpage.png"/>
+        </Frame>
+        Once you sign in, you will be redirected back to Visual Studio Code via pop-up.
+        <Note>If you are using a browser-based VS Code IDE like GitPod or Codespaces, you will be routed to instructions on how to complete authentication by providing an access token.</Note>
       </Step>
-      <Step title = "Sign In">
-
-        If you are not signed in, please sign in with your account details. Once you sign in, you will be redirected back to Visual Studio Code via pop-up.
-        
-        _If you are using a browser-based IDE, you will be routed to instructions on how to complete authentication by providing an access token._
-
-      </Step>
-      <Step title = "Wait for language server">
-
-        Once you are all signed in, Codeium will start downloading the language server. This is the program that actually communicates with our APIs to let you use Codeium. Depending on your internet connection, this download may take a few minutes.
+      <Step title = "Wait for Language Server">
+        Once you are signed in, Codeium will start downloading a language server.
+        This is the program that communicates with our APIs to let you use Codeium's AI features.
+        The download usually takes ten to twenty seconds, but the download speed may depend on your internet connection.
+        In the meantime, you are free to use VS Code as usual.
         
         You should see a notification on the bottom right to indicate the progress of the download.
-
         <img src = "https://exafunction.github.io/public/university_videos/misc_content/download.png"/>
       </Step>
-      <Step title = "All done!"/>
+      <Step title="All Done!">
+        You can now enjoy Codeium's rich AI featureset: Autocomplete, Chat, Command, and more.
+      </Step>
     </Steps>
 
   </Tab>
-  <Tab title="Jetbrains">
-    ✌️ Here's content that's only inside the second Tab.
+  <Tab title="JetBrains">
+    <Steps>
+      <Step title="Install Plugin">
+        Open the `Plugins` menu in your JetBrains IDE. The shortcut for this is `⌘+,` on Mac and `Ctrl+,` on Linux/Windows. It is also accessible from the settings menu.
+        Search for Codeium, and install the plugin. The plugin loader will prompt you to restart the IDE.
+        <Frame>
+          <img src="/assets/jetbrains_plugin_install.png"/>
+        </Frame>
+      </Step>
+      <Step title="Authorize">
+        Open a project. Codeium should prompt you to log in with a notification popup at the bottom right linking you to an online login page.
+        Equivalently, click the widget at the right of the bottom status bar and select the login option there.
+        <Frame>
+          <img src="/assets/jetbrains_login_widget.png"/>
+        </Frame>
+        If you do not have an account or otherwise are not already logged in online, you will be prompted to login.
+        <Frame>
+          <img src="/assets/login_prompt_webpage.png"/>
+        </Frame>
+        Once you have logged in online, the webpage will indicate that you can return to your IDE.
+        <Frame>
+          <img src="/assets/login_successful_webpage.png"/>
+        </Frame>
+      </Step>
+      <Step title="Wait for Language Server">
+        Upon successful login, Codeium will begin downloading a language server.
+        This is the program that communicates with our APIs to let you use Codeium's AI features.
+        The download usually takes ten to twenty seconds, but the download speed may depend on your internet connection.
+        In the meantime, you are free to use your IDE as usual.
+
+        You should see a notification on the bottom right to indicate the progress of the download.
+        <Frame>
+          <img src="/assets/jetbrains_ls_download_bar.png"/>
+        </Frame>
+      </Step>
+      <Step title="All Done!">
+        You can now enjoy Codeium's rich AI featureset: Autocomplete, Chat, Command, and more.
+
+        At any point, you can check your status by clicking the status bar widget at the bottom right.
+        If logged in, you will have access to your Codeium settings and other controls.
+        <Frame>
+          <img src="/assets/jetbrains_status_bar.png"/>
+        </Frame>
+      </Step>
+    </Steps>
   </Tab>
 </Tabs>
