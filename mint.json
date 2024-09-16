@@ -90,5 +90,10 @@
   "footerSocials": {
     "twitter": "https://x.com/codeiumdev",
     "discord": "https://discord.com/invite/3XFf78nAx5"
+  },
+  "analytics": {
+    "ga4": {
+      "measurementId": "G-8183L9GV0M"
+    }
   }
 }
