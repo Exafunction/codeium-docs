@@ -97,8 +97,6 @@
     }
   }, 
   "metadata": {
-    "og:image": "https://exafunction.github.io/public/brand/codeium_logo_light_wordmark.png",
-    "image": "/assets/docs_thumbnail.png",
-    "twitter:image": "/assets/docs_thumbnail.png"
+    "og:image": "https://exafunction.github.io/public/hero/thumbnail_docs.png"
   }
 }
