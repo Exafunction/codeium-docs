@@ -22,8 +22,8 @@
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://codeium.com/profile"
+    "name": "Download",
+    "url": "https://codeium.com/download"
   },
   "primaryTab": {
     "name": "Overview"
