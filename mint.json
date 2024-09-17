@@ -97,6 +97,11 @@
     }
   }, 
   "metadata": {
-    "og:image": "https://exafunction.github.io/public/hero/thumbnail_docs.png"
+    "og:image": "https://exafunction.github.io/public/hero/thumbnail_docs.png",
+    "twitter:image": "https://exafunction.github.io/public/hero/thumbnail_docs.png",
+    "twitter:site": "@codeiumdev",
+    "og:description": "Docs for Codeium: your modern coding superpowers.",
+    "og:site_name": "Codeium Docs",
+    "twitter:description": "Docs for Codeium: your modern coding superpowers."
   }
 }
