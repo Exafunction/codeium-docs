@@ -85,6 +85,12 @@
       "pages": [
         "context-awareness/overview"
       ]
+    },
+    {
+      "group": "Troubleshooting",
+      "pages": [
+        "troubleshooting/common-issues"
+      ]
     }
   ],
   "footerSocials": {
