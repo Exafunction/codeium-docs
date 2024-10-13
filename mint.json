@@ -77,6 +77,12 @@
             "command/overview",
             "command/related-features"
           ]
+        },
+        {
+          "group": "Supercomplete",
+          "pages": [
+            "supercomplete/overview"
+          ]
         }
       ]
     },
